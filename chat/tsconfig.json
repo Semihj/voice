@@ -1,4 +1,6 @@
 {
+  "noEmit": true,
+    "noEmitOnError": true,
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

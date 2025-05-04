@@ -63,7 +63,7 @@ const VoiceChatApp = () => {
   return (
     <div>
       <h2>Voice Chat</h2>
-      <audio ref={localAudioRef} autoPlay  />
+      <audio ref={localAudioRef} autoPlay muted />
       <audio ref={remoteAudioRef} autoPlay />
     </div>
   );

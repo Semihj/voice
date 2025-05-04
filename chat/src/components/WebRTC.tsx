@@ -1,12 +1,12 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
 const socket = io('http://localhost:5000'); 
 
 const VoiceChatApp = () => {
-  const localAudioRef = useRef();
-  const remoteAudioRef = useRef();
-  const peerRef = useRef();
+  const localAudioRef = useRef(null);
+  const remoteAudioRef = useRef(null);
+  const peerRef = useRef(null);
   const [room] = useState('voice-room');
 
   useEffect(() => {
